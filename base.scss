@@ -15,3 +15,19 @@ body{
     padding:20px;
     margin: 0;
 }
+
+main {
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    background-color: lightblue;
+    min-width: 200px;
+    width: 300px;
+}
+
+.right {
+    background-color: #dadfea;
+    width: 100%;
+}
