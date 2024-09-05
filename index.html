@@ -3,16 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
   <title>Dashboard</title>
   <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
   <main>
     <div class="left">
-      left
+      <div class="side-nav">
+        <div class="top">
+          <span class="logo"><i class="fa-solid fa-compact-disc"></i>Coursue</span>
+          <div class="category">
+            <p class="cate-title">OVERVIEW</p>
+            <ul>
+              <li><a href=""><i class="fa-solid fa-border-all"></i>Dashboard</a></li>
+              <li><a href=""><i class="fa-solid fa-inbox"></i>Inbox</a></li>
+              <li><a href=""><i class="fa-solid fa-book"></i>Lesson</a></li>
+              <li><a href=""><i class="fa-solid fa-list"></i>Task</a></li>
+              <li><a href=""><i class="fa-solid fa-user-group"></i>Group</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <p class="cate-title">FRIENDS</p>
+            <div class="friend-box">
+              <span class="friend-icon"></span>
+              <div class="friend-info">
+                <p class="friend-name">Main Name</p>
+                <p class="friend-type">Friend</p>
+              </div>
+            </div>
+            <div class="friend-box">
+              <span class="friend-icon"></span>
+              <div class="friend-info">
+                <p class="friend-name">Main Name</p>
+                <p class="friend-type">Friend</p>
+              </div>
+            </div>
+            <div class="friend-box">
+              <span class="friend-icon"></span>
+              <div class="friend-info">
+                <p class="friend-name">Main Name</p>
+                <p class="friend-type">Friend</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <div class="category">
+            <p class="cate-title">SETTINGS</p>
+            <ul>
+              <li><a href=""><i class="fa-solid fa-gear"></i>Settings</a></li>
+              <li><a href=""><i class="fa-solid fa-right-from-bracket"></i>Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="right">
-      <div class="top-nav"></div>
+      <div class="right-main">
+        <div class="top-nav">
+          <div class="nav-left">
+            <i class="fa-solid fa-magnifying-glass"></i><input type="text">
+          </div>
+          <div class="nav-right">
+            <span></span>
+            <span></span>
+            <div class="vl"></div>
+            <div class="profile">
+              <div class="name">
+                <p></p>
+                <p>First Last</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="right-side"></div>
     </div>
   </main>
 </body>
