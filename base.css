@@ -1,9 +1,7 @@
-body {
+* {
   padding: 0;
+  margin: 0;
   font-family: "Poppins", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
 }
 
 main {
@@ -69,7 +67,7 @@ main {
 .friend-box span {
   height: 40px;
   width: 40px;
-  background-color: #6e62e5;
+  background-color: #2a2a2a;
   border-radius: 50%;
   margin-right: 12px;
 }
@@ -86,6 +84,10 @@ main {
   font-size: 14px;
   color: grey;
   margin: 0;
+}
+
+.logout {
+  color: orange;
 }
 
 .right {
@@ -123,8 +125,8 @@ main {
   padding: 4px 8px;
 }
 .top-nav .nav-right span {
-  min-height: 40px;
-  min-width: 40px;
+  height: 40px;
+  widtH: 40px;
   border-radius: 50%;
   background-color: #2a2a2a;
   margin-right: 24px;
@@ -141,8 +143,8 @@ main {
   height: 0;
 }
 .top-nav .nav-right .name p:nth-of-type(1) {
-  min-height: 40px;
-  min-width: 40px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
   background-color: #2a2a2a;
   margin-right: 12px;
@@ -150,6 +152,11 @@ main {
 .top-nav .nav-right .name p:nth-of-type(2) {
   font-weight: 400;
   font-size: 16px;
+}
+
+.right {
+  background-color: #dadfea;
+  width: 100%;
 }
 
 .topHalf {
