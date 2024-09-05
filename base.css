@@ -12,14 +12,144 @@ main {
 }
 
 .left {
-  background-color: lightblue;
   min-width: 200px;
   width: 300px;
+  padding: 20px 0 20px 35px;
+  display: flex;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 600;
+}
+.logo i {
+  margin-right: 12px;
+  color: #6e62e5;
+}
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.category p {
+  font-size: 18px;
+}
+.category ul {
+  padding: 0;
+}
+.category ul li {
+  list-style: none;
+  margin-left: 0px;
+  margin-bottom: 24px;
+}
+.category ul li a {
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #2a2a2a;
+}
+.category ul li a i {
+  margin-right: 12px;
+}
+.category .cate-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: grey;
+}
+
+.friend-box {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 24px;
+}
+.friend-box span {
+  height: 40px;
+  width: 40px;
+  background-color: #6e62e5;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.friend-info {
+  width: 70%;
+}
+.friend-info .friend-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+.friend-info .friend-type {
+  font-size: 14px;
+  color: grey;
+  margin: 0;
 }
 
 .right {
   background-color: #dadfea;
   width: 100%;
+  height: 100%;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightblue;
+  padding: 12px 35px 12px 0;
+}
+.top-nav .nav-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 12px;
+  width: 70%;
+  background-color: lightpink;
+}
+.top-nav .nav-left input {
+  font-size: 16px;
+  width: 90%;
+  background-color: #f6f6f6;
+  border: 1px solid grey;
+}
+.top-nav .nav-right {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  padding: 4px 8px;
+}
+.top-nav .nav-right span {
+  min-height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  background-color: #2a2a2a;
+  margin-right: 24px;
+}
+.top-nav .nav-right .vl {
+  border-left: 2px solid grey;
+  height: 40px;
+  margin-right: 24px;
+}
+.top-nav .nav-right .name {
+  display: flex;
+  align-items: center;
+  background-color: lightgoldenrodyellow;
+  height: 0;
+}
+.top-nav .nav-right .name p:nth-of-type(1) {
+  min-height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  background-color: #2a2a2a;
+  margin-right: 12px;
+}
+.top-nav .nav-right .name p:nth-of-type(2) {
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .topHalf {
