@@ -121,7 +121,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: lightblue;
+    background-color: rgba(173, 216, 230, 0);
     padding: 12px 35px 12px 0;
 
         .nav-left {
@@ -190,17 +190,12 @@ main {
         
 }
 
-.right {
-    background-color:#dadfea;
-    width:100%;
-}
-
 .topHalf{
-    width:70%;
+    width:62.5%;
     height:auto;
+    margin-left:115px;
     padding:10px;
     background-color:rgba(128, 128, 128, 0);
-    margin:auto;
     display:flex;
     flex-wrap:wrap;
     justify-content:space-between;
@@ -257,6 +252,7 @@ main {
     background-color:white;
     border-radius:vars.$border-radius;
     color:rgb(148, 145, 145);
+    text-align:center;
 }
 
 .smallTop p{
@@ -264,3 +260,12 @@ main {
     font-weight:550;
 }
 
+.downRight{
+    width:20%;
+    height:85vh;
+    background-color:#ffffff;
+    position:absolute;
+    top:87px;
+    right:20px;
+    border-radius:vars.$border-radius;
+}

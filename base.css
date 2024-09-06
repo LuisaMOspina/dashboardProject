@@ -104,7 +104,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: lightblue;
+  background-color: rgba(173, 216, 230, 0);
   padding: 12px 35px 12px 0;
 }
 .top-nav .nav-left {
@@ -158,17 +158,12 @@ main {
   font-size: 16px;
 }
 
-.right {
-  background-color: #dadfea;
-  width: 100%;
-}
-
 .topHalf {
-  width: 70%;
+  width: 62.5%;
   height: auto;
+  margin-left: 115px;
   padding: 10px;
   background-color: rgba(128, 128, 128, 0);
-  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -225,9 +220,20 @@ main {
   background-color: white;
   border-radius: 15px;
   color: rgb(148, 145, 145);
+  text-align: center;
 }
 
 .smallTop p {
   color: black;
   font-weight: 550;
+}
+
+.downRight {
+  width: 20%;
+  height: 85vh;
+  background-color: #ffffff;
+  position: absolute;
+  top: 87px;
+  right: 20px;
+  border-radius: 15px;
 }/*# sourceMappingURL=base.css.map */
