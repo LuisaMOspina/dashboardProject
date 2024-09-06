@@ -1,4 +1,41 @@
-$font-color:#2a2a2a;
+$mainGrey:#2a2a2a;
 $border-radius:15px;
 $mainPurple: #6e62e5;
-$cardPadding: 12px;
+$cardPadding: 20px;
+$borderRad: 20px;
+
+
+@mixin rowBase() {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 60%;
+  margin-bottom: 24px;
+  // background-color: lightpink;
+}
+
+
+@mixin cardBase($width, $cardColor) {
+  display: flex;
+  flex-direction: column;
+  border-radius: $borderRad;
+  padding: $cardPadding;
+  background-color: $cardColor;
+  width: $width;
+  // height: fit-content;
+  margin: 12px;
+}
+
+@mixin cardTitle() {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+
+@mixin cardDesc() {
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+}
+
+

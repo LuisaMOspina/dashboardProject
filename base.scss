@@ -57,7 +57,7 @@ main {
         font-size: 18px;
         font-weight: 500;
         text-decoration: none;
-        color: vars.$font-color;
+        color: vars.$mainGrey;
     }
 
     ul li a i {
@@ -81,7 +81,7 @@ main {
     span {
         height: 40px;
         width: 40px;
-        background-color: vars.$font-color;
+        background-color: vars.$mainGrey;
         border-radius: 50%;
         margin-right: 12px;
     }
@@ -118,7 +118,6 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: lightblue;
     padding: 12px 35px 12px 0;
     margin-bottom: 12px;
 
@@ -149,8 +148,8 @@ main {
             span {
                 height: 40px;
                 widtH: 40px;
-                // border-radius: 50%;
-                background-color: vars.$font-color;
+                border-radius: 50%;
+                background-color: vars.$mainGrey;
                 margin-right: 24px;
             }
 
@@ -171,7 +170,7 @@ main {
                     height: 40px;
                     width: 40px;
                     border-radius: 50%;;
-                    background-color: vars.$font-color;
+                    background-color: vars.$mainGrey;
                     margin-right: 12px;
                 }
 
@@ -185,81 +184,48 @@ main {
         
 }
 
-.right {
-    background-color:#dadfea;
-    width:100%;
+.card-row {
+    @include vars.rowBase();
+    margin-left: 50px;
 }
 
-.topHalf{
-    width:70%;
-    height:auto;
-    padding: vars.$cardPadding;
-    background-color:gray;
-    padding:10px;
-    background-color:rgba(128, 128, 128, 0);
-    margin:auto;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-between;
-    border-radius: vars.$border-radius;
+.card {
+    @include vars.cardBase(60%, vars.$mainPurple);
+
+    h3 {
+        @include vars.cardTitle();
+        margin-bottom: 12px;
+    }
+    
+    p {
+        @include vars.cardDesc();
+        margin-bottom: 12px;
+    }
+
+    button {
+        width: fit-content;
+        text-align: left;
+        padding: 12px;
+        border-radius: vars.$borderRad;
+        border: none;
+        background-color: #080808;
+        color: white;
+        transition: 0.2s;
+        cursor: pointer;
+
+        span {
+            margin-left: 8px;
+        }
+    }
+
+    button:hover {
+        transform: translateX(12px)
+    }
 }
 
-.headCont{
-    width:100%;
-    height:auto;
-    padding:10px;
-    background-color:vars.$mainPurple;
-    border-radius:vars.$border-radius;
-    color:white;
-    margin-bottom:10px;
-    padding: vars.$cardPadding;
-}
 
-.headCont p{
-    letter-spacing:2.5px;
-    margin-left:15px;
-    font-size:12px;
-}
 
-.headCont h1{
-    font-weight:400;
-    margin-left:15px;
-    line-height:.5;
+.card-row-2 {
+    @include vars.rowBase();
+    margin-left: 50px;
 }
-
-.headBut{
-    width:110px;
-    height:auto;
-    padding: vars.$cardPadding;
-    background-color:black;
-    color:white;
-    border-radius:25px;
-    text-align:center;
-    font-size:13px;
-    margin-left:15px;
-}
-
-.fa-chevron-right{
-    width:10px;
-    font-size:12px;
-    color:black;
-    background-color:white;
-    padding:8px;
-    border-radius:20px;
-    margin-left:10px;
-}
-
-.smallTop{
-    width:150px;
-    height:50px;
-    padding: vars.$cardPadding;
-    background-color:white;
-    border-radius:vars.$border-radius;
-    color:rgb(148, 145, 145);
-}
-
-.smallTop p{
-    color:black;
-    font-weight:550;
-}
-
